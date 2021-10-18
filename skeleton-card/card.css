@@ -1,0 +1,168 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+
+}
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height: 100vh;
+    background:#eff7f2;
+    font-family:"Lato", sans-serif;
+
+}
+
+.user-card{
+    width: 300px;
+    height: 400px;
+    box-shadow: -10px 5px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: box-shadow 0.2s ease-in;
+    cursor:pointer;
+}
+.user-card:hover{
+    box-shadow:-10px 10px 20px rgba(0, 0, 0, 0.4);
+   
+}
+
+.user-card
+.user-cover{
+    height: 150px;
+    width:100%;
+    position: relative;
+    background-image: url(./photo/images\ \(4\).jpeg);
+    background-position: center;
+    background-size: cover;
+    /* background: black; */
+
+}
+
+.user-card
+.user-cover
+.user-avatar{
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    left: 0;
+    right:0;
+    margin: auto;
+    bottom: -35px;
+    border: 2px solid #fff;
+}
+.user-card
+.user-details{
+    justify-content: center;
+    text-align: center;
+    margin-top:64%;
+    margin-bottom: 25px;
+    margin-left: 28px;
+    margin-right: 0;
+    width:80%;
+    
+}
+
+.user-card
+.user-details
+.user-name{
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.user-card
+.user-details
+.user-email{
+   color:#0f5fc0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.user-card
+.user-details
+.user-text{
+    margin-top: 5px;
+    font-size:15px;
+    color:#666;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.user-card 
+.contact-user{
+    margin-bottom: 15px;
+    height: 35px;
+    width: 80%;
+    letter-spacing: 0.5px;
+    margin-left: 28px;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    background: #035f7d;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-card.skeleton 
+.user-cover{
+    background: #e2e2e2;
+}
+.user-card.skeleton 
+.user-cover 
+.user-avatar{
+    display: none;
+}
+
+.user-card.skeleton
+.user-cover::after{
+    content: " ";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    margin:auto;
+    bottom: -35px;
+    border: 2px solid #fff;
+    z-index: 10;
+    background:#e2e2e2; 
+}
+
+.user-card.skeleton
+.hide-text{
+    background:#e2e2e2 ;
+    color:transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.user-card.skeleton
+.hide-text::before{
+    content: " ";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    right: 0;
+   background: linear-gradient(to right, #e2e2e2 25%, #d5d5d5 50%, #e2e2e2 100% );
+   animation-name: gradient-animation;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   filter: blur(5px);
+}
+@keyframes gradient-animation{
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}

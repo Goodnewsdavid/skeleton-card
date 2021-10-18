@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background: rgb(219, 215, 215);
+    
+}
+
+.main-div{
+    position: absolute;
+    left:50%;
+    top: 40%;
+    background: white;
+    width: 43%;
+    height: 70%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    box-shadow: -10px 5px 20px rgba(143, 136, 136, 0.3);
+}
+
+.main-div
+.inner-main-div{
+    /* background: #e2e2e2; */
+    width: 100%;
+   padding: 40px;
+   margin-bottom:20px;
+
+}
+
+
+.header{
+    /* line-height: 1.75rem; */
+    font-weight: 600;
+    font-size:24px ;
+    margin-top: 1px;
+    margin-bottom:12px;
+    font-family: "Segoe UI","Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+}
+
+.input-field{
+    padding:6px 10px;
+    width:100%;
+    display:block;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-width: 1px;
+    outline: none;
+    border-color: rgba(0,0,0,.6);
+    height: 36px;
+    padding-left: 0;
+    margin-top: 1px;
+    margin-bottom: 30px;
+    font-size: 15px;
+
+    /* background-color:transparent; */
+
+}
+
+.acct-create{
+    margin-bottom: 5px;
+    font-size:15px;
+    
+}
+.acct-create a{
+    text-decoration:none;
+}
+.acct-create a:hover{
+    text-decoration: underline;
+    color: gray;
+}
+
+.sign-in{
+    font-size:15px;
+}
+.sign-in a{
+    text-decoration:none;
+}
+.sign-in a:hover{
+    text-decoration: underline;
+    color: gray;
+}
+
+.next-btn{
+width: 100%;
+/* min-width: 60%; */
+}
+
+.next-btn button{
+    float: right;
+    color: white;
+    border-color: #0067b8;
+    background-color:#0067b8;
+   /* display: inline-block; */
+    width: 30%;
+    text-align: center;
+    min-height: 32px;
+    border: none;
+    padding: 4px 12px 4px 12px;
+    margin-top:18px;
+    cursor: pointer;
+    font-size: 15px;
+
+    
+}
+.next-btn button:hover{
+    background-color:#045ea3;
+    color: white;
+}
+
+.sign-in-bottom{
+    position: absolute;
+    left:50%;
+    top: 84%;
+    background: white;
+    width: 43%;
+    /* padding-top:2px; */
+    padding-bottom:8px;
+    transform: translate(-50%, -50%);
+    /* overflow: hidden; */
+    box-shadow: -10px 5px 20px rgba(143, 136, 136, 0.3);
+    /* padding:12px  ; */
+    height: 10%;
+}
+
+.sign-in-bottom div{
+    padding: 12px 44px;
+    font-size:18px;
+
+}
+/*-------- SKELETON PART-------- */
+
+
+
+.main-container
+.main-div.skeleton
+.inner-main-div
+.sign{
+    display: none;
+}
+
+
+
+
+/* .main-container
+.logo::after{
+    content: " ";
+    display: absolute;
+    background-color: #e2e2e2;
+
+} */
+
+.main-div.skeleton
+.container
+.si
+.hide-content::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+   background: linear-gradient(to right, #e2e2e2 25%, #d5d5d5 50%, #e2e2e2 100% );
+   animation-name: gradient-animation;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   filter: blur(5px);
+   
+}
+.main-div.skeleton
+.container
+.hide-content{
+    background:#e2e2e2 ;
+    color:transparent;
+    position: relative;
+    overflow: hidden;
+
+}
+.main-div.skeleton
+.container
+.hide-content a{
+    background:#e2e2e2 ;
+    color:transparent;
+    position: relative;
+    overflow: hidden;
+
+}
+.input-main input
+.hide-content{
+    background:#e2e2e2 ;
+    color:transparent;
+    position: relative;
+    overflow: hidden;
+
+}
+.sign-in-bottom.skeleton 
+.hide-content{
+    background:#e2e2e2 ;
+    color:transparent;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+@keyframes gradient-animation{
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}
+
+
+
+
+
+
